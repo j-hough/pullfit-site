@@ -188,6 +188,25 @@
       box-shadow: 0 0 12px var(--orange);
     }
 
+    .shot {
+      margin: -26px -26px 20px;
+      aspect-ratio: 3 / 2;
+      overflow: hidden;
+      background: #080b14;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .shot img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .product::before {
+      z-index: 1;
+    }
+
     .tag {
       align-self: flex-start;
       padding: 4px 11px;
@@ -358,6 +377,10 @@
 
       <article class="product">
 
+        <div class="shot">
+          <img src="bands-fitbeast.jpg" alt="The five FitBeast loop bands used to record PullFit, draped over a bench by the sea" width="900" height="600" loading="lazy" />
+        </div>
+
         <span class="tag">The bands we use at PullFit</span>
 
         <h3>FitBeast Pull Up Bands Set</h3>
@@ -384,6 +407,10 @@
 
       <article class="product">
 
+        <div class="shot">
+          <img src="bands-set.svg" alt="" width="300" height="200" loading="lazy" />
+        </div>
+
         <span class="tag">Budget set</span>
 
         <h3>A cheaper set to start</h3>
@@ -409,6 +436,10 @@
       </article>
 
       <article class="product">
+
+        <div class="shot">
+          <img src="bands-single.svg" alt="" width="300" height="200" loading="lazy" />
+        </div>
 
         <span class="tag">One band</span>
 
