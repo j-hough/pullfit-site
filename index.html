@@ -140,6 +140,41 @@
       box-shadow: 0 0 25px rgba(0, 234, 255, 0.35);
     }
 
+    .hero-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-bottom: 22px;
+    }
+
+    .hero-buttons .button {
+      padding: 15px 26px;
+      font-size: 1.05rem;
+    }
+
+    .button.primary {
+      border-color: var(--pink);
+      background: var(--pink);
+      color: #12020f;
+      box-shadow: 0 0 22px rgba(255, 43, 214, 0.35);
+    }
+
+    .button.primary:hover {
+      background: #ff5fe1;
+      color: #12020f;
+      box-shadow: 0 0 30px rgba(255, 43, 214, 0.55);
+    }
+
+    .discover {
+      color: var(--muted);
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .discover:hover {
+      color: var(--cyan);
+    }
+
     /* CONTENT */
 
     main {
@@ -333,7 +368,13 @@
         training into mixed reality.
       </p>
 
-      <a href="#about" class="button">Discover PullFit</a>
+      <div class="hero-buttons">
+        <a href="https://www.meta.com/experiences/pullfit/1360226600510704" class="button primary">Get the App</a>
+        <a href="bands.html" class="button">Which Bands?</a>
+        <a href="support.html" class="button">Support</a>
+      </div>
+
+      <a href="#about" class="discover">Discover PullFit &darr;</a>
 
     </div>
   </header>
